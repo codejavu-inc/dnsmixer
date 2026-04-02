@@ -12,4 +12,22 @@
 - **Clean Output:** Designed for easy piping into other tools like `httpx` or `dnsx`.
 
 ## Installation
+```
+git clone https://github.com/codejavu-inc/dnsmixer.git
+cd dnsmixer
+bash install.sh
+sudo cp dnsmixer /usr/local/bin # if you want to execute dnsmixer from any directory
+```
 
+# Usage
+```
+~ dnsmixer -h
+Usage: dnsmixer [options]
+
+Options:
+  -w <file>   Wordlist file (if omitted, only permutes existing subdomains)
+  -t <file>   Target list of subdomains (Required)
+  -l1         Process only first-level subdomains
+  -sc <sub>   Scope execution to only this subdomain and its children
+  -o <file>   Output file path to save results (default is stdout)
+```
